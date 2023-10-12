@@ -12,11 +12,19 @@
 // var val1 = "var変数を再宣言";
 // console.log(val1);
 
-let val2 = "let変数";
-console.log(val2);
-// letは上書き可能
-val2 = "let変数を上書き";
-console.log(val2);
+// let val2 = "let変数";
+// console.log(val2);
+// // letは上書き可能
+// val2 = "let変数を上書き";
+// console.log(val2);
 
-//  lete破砕宣言不可能
-let val2 = "let変数を再宣言";
+// //  lete破砕宣言不可能
+// let val2 = "let変数を再宣言";
+
+const val3 = "const変数";
+console.log(val3);
+// constは上書きできない
+
+// val3 = "const変数を上書き";
+
+const val3 = "constを再宣言";
