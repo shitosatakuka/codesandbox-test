@@ -21,10 +21,18 @@
 // //  lete破砕宣言不可能
 // let val2 = "let変数を再宣言";
 
-const val3 = "const変数";
-console.log(val3);
-// constは上書きできない
+// const val3 = "const変数";
+// console.log(val3);
+// // constは上書きできない
 
-// val3 = "const変数を上書き";
+// // val3 = "const変数を上書き";
 
-const val3 = "constを再宣言";
+// const val3 = "constを再宣言";
+const val4 = {
+  name: "サントス",
+  age: "39",
+};
+
+val4.name = "baba";
+console.log(val4);
+// constの中身がobjectの場合は変更が可能になる。必ずしも変わらないわけではない。
