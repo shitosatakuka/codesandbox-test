@@ -35,4 +35,6 @@ const val4 = {
 
 val4.name = "baba";
 console.log(val4);
+val4.address = "Tokyo"; 
 // constの中身がobjectの場合は変更が可能になる。必ずしも変わらないわけではない。
+//プロパティを追加することも可能
