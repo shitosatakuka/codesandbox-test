@@ -40,7 +40,22 @@
 // //プロパティを追加することも可能
 
 // 配列などのプロパティの変更や追加についても可能。
-const val5 = ["dog", "cat"];
-val5[1] = "bird";
-val5.push("lion");
-console.log(val5);
+// const val5 = ["dog", "cat"];
+// val5[1] = "bird";
+// val5.push("lion");
+// console.log(val5);
+
+/**
+ * テンプレート文字列
+ */
+const name1 = "サントス";
+const age = 39;
+// 「私の名前はサントスです。年齢は39歳です。」
+
+// 従来の方法
+const message1 = "私の名前は" + name1 + "です。年齢は" + age + "歳です。";
+console.log(message1);
+
+// テンプレート文字列を使用
+const message2 = `僕の名前は${name1}です。年齢は${age}歳です。`;
+console.log(message2);
