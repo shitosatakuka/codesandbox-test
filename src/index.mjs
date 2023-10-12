@@ -28,13 +28,19 @@
 // // val3 = "const変数を上書き";
 
 // const val3 = "constを再宣言";
-const val4 = {
-  name: "サントス",
-  age: "39",
-};
+// const val4 = {
+//   name: "サントス",
+//   age: "39",
+// };
 
-val4.name = "baba";
-console.log(val4);
-val4.address = "Tokyo"; 
-// constの中身がobjectの場合は変更が可能になる。必ずしも変わらないわけではない。
-//プロパティを追加することも可能
+// val4.name = "baba";
+// console.log(val4);
+// val4.address = "Tokyo";
+// // constの中身がobjectの場合は変更が可能になる。必ずしも変わらないわけではない。
+// //プロパティを追加することも可能
+
+// 配列などのプロパティの変更や追加についても可能。
+const val5 = ["dog", "cat"];
+val5[1] = "bird";
+val5.push("lion");
+console.log(val5);
