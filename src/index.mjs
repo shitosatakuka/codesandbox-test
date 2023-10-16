@@ -194,10 +194,20 @@ const nameArr = ["田中", "山田", "すもも"];
 // console.log(newNumArr);
 // // 特定の条件のみを取り出す
 
-for (let i = 0; i < nameArr.length; i++) {
-  console.log(`${i + 1}番目は${nameArr[i]}です。`);
-}
+// for (let i = 0; i < nameArr.length; i++) {
+//   console.log(`${i + 1}番目は${nameArr[i]}です。`);
+// }
 
-nameArr.map((lastName, i) =>
-  console.log(`${i + 1}番目は${lastName}ですか？？`),
-);
+// nameArr.map((lastName, i) =>
+//   console.log(`${i + 1}番目は${lastName}ですか？？`),
+// );
+
+// スモモ以外には「さん」をつける
+const newNameArr = nameArr.map((lastName) => {
+  if (lastName === "すもも") {
+    return lastName;
+  } else {
+    return `${lastName}さん`;
+  }
+});
+console.log(newNameArr);
