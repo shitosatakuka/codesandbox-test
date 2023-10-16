@@ -108,3 +108,24 @@
 // const [name3, age] = myProfile;
 // const message4 = `私の名前は${name3}です。年齢は${age}です。`;
 // console.log(message4);
+
+/**
+ * デフォルト値、引数など
+ */
+// デフォルト値を変えたい場合は、nameの後に='変えたい名前'を入力する
+// 通常
+// const sayHello = (name) => {
+//   return console.log(`こんにちは！ ${name}さん`);
+// };
+// sayHello("じゅるり");
+
+// const sayHello = (name) => {
+//   return console.log(`こんにちは！ ${name}さん`);
+// };
+// sayHello();
+// ↑何も引数に設定されていないとundefinedになってしまう。
+// ↓nameにゲストを登録しておくとその名前で出力される。
+const sayHello = (name = "ゲスト") => {
+  return console.log(`こんにちは！ ${name}さん`);
+};
+sayHello();
