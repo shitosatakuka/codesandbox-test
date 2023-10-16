@@ -173,7 +173,7 @@
  * mapやfilterをつかった配列
  */
 
-const nameArr = ["田中", "山田", "すもも"];
+// const nameArr = ["田中", "山田", "すもも"];
 // for (let i = 0; i < nameArr.length; i++) {
 //   console.log(nameArr[i]);
 // }
@@ -203,11 +203,32 @@ const nameArr = ["田中", "山田", "すもも"];
 // );
 
 // スモモ以外には「さん」をつける
-const newNameArr = nameArr.map((lastName) => {
-  if (lastName === "すもも") {
-    return lastName;
-  } else {
-    return `${lastName}さん`;
-  }
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((lastName) => {
+//   if (lastName === "すもも") {
+//     return lastName;
+//   } else {
+//     return `${lastName}さん`;
+//   }
+// });
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+// ある条件　？　条件がtrueの時：　条件がfalseの時
+// const val1 = 1 > 0 ? "trueです" : "falseです";
+// console.log(val1);
+
+// const num = "1300";
+// console.log(num.toLocaleString()); //toLocaleString()は数値を三桁区切りで出力
+
+// 数値がnumberかそうでないかの判定をすることができる。
+// const formattedNum =
+//   typeof num === "number" ? num.toLocaleString() : "数値を入力してください。";
+// console.log(formattedNum);
+
+// 関数内での処理
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を越えています。" : "許容範囲内です。";
+// };
+// console.log(checkSum(50, 30));
