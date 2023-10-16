@@ -89,13 +89,22 @@
  * 分割代入
  */
 
-const myProfile = {
-  name1: "サントス",
-  age: 39,
-};
-const message1 = `名前は${myProfile.name1}です。年齢は${myProfile.age}歳です。`;
-console.log(message1);
+// const myProfile = {
+//   name1: "サントス",
+//   age: 39,
+// };
+// const message1 = `名前は${myProfile.name1}です。年齢は${myProfile.age}歳です。`;
+// console.log(message1);
 
-const { name1, age } = myProfile;
-const message2 = `名前は${name1}です。年齢は${age}歳です。`;
-console.log(message2);
+// const { name1, age } = myProfile;
+// const message2 = `名前は${name1}です。年齢は${age}歳です。`;
+// console.log(message2);
+
+// 分割代入は配列にも使えます
+// const myProfile = ["サントス", 40];
+// const message3 = `私の名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+// console.log(message3);
+
+// const [name3, age] = myProfile;
+// const message4 = `私の名前は${name3}です。年齢は${age}です。`;
+// console.log(message4);
