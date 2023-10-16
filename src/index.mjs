@@ -174,14 +174,30 @@
  */
 
 const nameArr = ["田中", "山田", "すもも"];
+// for (let i = 0; i < nameArr.length; i++) {
+//   console.log(nameArr[i]);
+// }
+
+// // mapを使って
+// const nameArr2 = nameArr.map((lastName) => {
+//   return lastName;
+// });
+// console.log(nameArr2);
+
+// nameArr.map((lastName)=>console.log(lastName));
+
+// filterをつかって
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
+// // 特定の条件のみを取り出す
+
 for (let i = 0; i < nameArr.length; i++) {
-  console.log(nameArr[i]);
+  console.log(`${i + 1}番目は${nameArr[i]}です。`);
 }
 
-// mapを使って
-const nameArr2 = nameArr.map((lastName) => {
-  return lastName;
-});
-console.log(nameArr2);
-
-nameArr.map((lastName)=>console.log(lastName));
+nameArr.map((lastName, i) =>
+  console.log(`${i + 1}番目は${lastName}ですか？？`),
+);
