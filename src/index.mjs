@@ -168,3 +168,20 @@
 // // [100,20]で置き換わっている。
 // console.log(arr4);
 // // arr4も[100,20]に置き換わってしまう。
+
+/**
+ * mapやfilterをつかった配列
+ */
+
+const nameArr = ["田中", "山田", "すもも"];
+for (let i = 0; i < nameArr.length; i++) {
+  console.log(nameArr[i]);
+}
+
+// mapを使って
+const nameArr2 = nameArr.map((lastName) => {
+  return lastName;
+});
+console.log(nameArr2);
+
+nameArr.map((lastName)=>console.log(lastName));
