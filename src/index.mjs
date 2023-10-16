@@ -64,23 +64,38 @@
  * アロー関数
  */
 // 従来の関数
-function func1(str) {
-  return str;
-}
-// 定数の中に関数を入れて書くこともできる。
-const func2 = function (str2) {
-  return str2;
-};
-console.log(func1("func1です"));
-console.log(func2("func2です"));
+// function func1(str) {
+//   return str;
+// }
+// // 定数の中に関数を入れて書くこともできる。
+// const func2 = function (str2) {
+//   return str2;
+// };
+// console.log(func1("func1です"));
+// console.log(func2("func2です"));
 
-// アロー関数
-const func3 = (str) => {
-  return str;
-};
-console.log(func3("func3です"));
+// // アロー関数
+// const func3 = (str) => {
+//   return str;
+// };
+// console.log(func3("func3です"));
 
-const func4 = (num1, num2) => {
-  return num1 + num2;
+// const func4 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(func4(25, 15));
+
+/**
+ * 分割代入
+ */
+
+const myProfile = {
+  name1: "サントス",
+  age: 39,
 };
-console.log(func4(25, 15));
+const message1 = `名前は${myProfile.name1}です。年齢は${myProfile.age}歳です。`;
+console.log(message1);
+
+const { name1, age } = myProfile;
+const message2 = `名前は${name1}です。年齢は${age}歳です。`;
+console.log(message2);
