@@ -125,7 +125,19 @@
 // sayHello();
 // ↑何も引数に設定されていないとundefinedになってしまう。
 // ↓nameにゲストを登録しておくとその名前で出力される。
-const sayHello = (name = "ゲスト") => {
-  return console.log(`こんにちは！ ${name}さん`);
-};
-sayHello();
+// const sayHello = (name = "ゲスト") => {
+//   return console.log(`こんにちは！ ${name}さん`);
+// };
+// sayHello();
+
+/**
+ * スプレッド構文
+ */
+// 配列の展開
+const arr1 = [1, 2];
+// console.log(arr1);
+// console.log(...arr1);
+
+const sumFunc = (num1, num2) => console.log(num1 + num2);
+sumFunc(arr1[0], arr1[1]);
+sumFunc(...arr1);
